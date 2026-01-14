@@ -2,11 +2,13 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-
-  <!-- ✅ هذا السطر هو الأهم -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vote Games</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2196f3">
 
   <style>
     body {
@@ -25,7 +27,6 @@
     h1 {
       text-align: center;
       color: #2196f3;
-      font-size: 22px;
     }
 
     .card {
@@ -36,27 +37,15 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    a.button {
+    .btn {
       display: block;
-      text-align: center;
       background: #2196f3;
       color: #fff;
+      text-align: center;
       padding: 12px;
-      margin-top: 10px;
       border-radius: 8px;
       text-decoration: none;
-      font-size: 16px;
-    }
-
-    a.button:hover {
-      background: #1976d2;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #777;
-      margin-top: 20px;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -68,18 +57,20 @@
 
     <div class="card">
       <p>صوّت للألعاب واربح نقاط</p>
-      <a class="button" href="#">ابدأ التصويت</a>
+      <a class="btn" href="#">ابدأ التصويت</a>
     </div>
 
     <div class="card">
-      <p>شاهد الترتيب اليومي</p>
-      <a class="button" href="#">عرض الترتيب</a>
+      <p>شاهد ترتيب الألعاب</p>
+      <a class="btn" href="#">عرض الترتيب</a>
     </div>
-
-    <footer>
-      © 2026 Vote Games
-    </footer>
   </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 
 </body>
 </html>
