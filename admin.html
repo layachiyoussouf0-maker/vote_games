@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>لوحة إدارة الطلبات</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2196f3">
+</head>
+<body onload="adminLoginPrompt()">
+
+<h2>لوحة إدارة طلبات السحب</h2>
+
+<div id="adminContent" style="display:none;">
+  <table border="1" width="80%" style="margin:auto;">
+    <thead>
+      <tr>
+        <th>عنوان TRC20</th>
+        <th>المبلغ</th>
+        <th>الحالة</th>
+        <th>أفعال</th>
+      </tr>
+    </thead>
+    <tbody id="requestsTable">
+      <!-- الطلبات تظهر هنا -->
+    </tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

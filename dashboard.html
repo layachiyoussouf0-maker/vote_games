@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>لوحة التحكم</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2196f3">
+</head>
+<body onload="loadDashboard()">
+
+<h2>مرحبا <span id="user"></span></h2>
+<p>رصيدك: <b><span id="points"></span></b> نقطة</p>
+
+<h3>المهام</h3>
+<button onclick="startTask(0)">تنفيذ المهمة 1</button>
+<button onclick="startTask(1)">تنفيذ المهمة 2</button>
+<button onclick="startTask(2)">تنفيذ المهمة 3</button>
+<br><br>
+<button onclick="verifyTask()">تحقق من المهمة</button>
+
+<h3>نظام الإحالة</h3>
+<p>شارك هذا الرابط: <span id="referral"></span></p>
+
+<br>
+<a href="withdraw.html">طلب رصيد</a>
+
+<script src="script.js"></script>
+</body>
+</html>

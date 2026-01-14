@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>سحب النقاط</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2196f3">
+</head>
+<body>
+
+<h2>طلب سحب النقاط</h2>
+
+<p>أدخل عنوان TRC20 الخاص بك:</p>
+<input type="text" id="trcAddress" placeholder="مثال: THvcvzbVD83bDxH9j3XBjAG8WLaSnQ8MXP">
+<br><br>
+<p>المبلغ المراد سحبه (بالنقاط):</p>
+<input type="number" id="amount" placeholder="50 أو أكثر">
+<br><br>
+<button onclick="withdrawTRC()">إرسال الطلب</button>
+
+<p id="msg"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
