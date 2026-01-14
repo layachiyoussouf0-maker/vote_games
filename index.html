@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<title>Vote Games</title>
-<link rel="stylesheet" href="style.css">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2196f3">
+  <meta charset="UTF-8">
+
+  <!-- ✅ هذا السطر هو الأهم -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vote Games</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2196f3;
+      font-size: 22px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    a.button {
+      display: block;
+      text-align: center;
+      background: #2196f3;
+      color: #fff;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    a.button:hover {
+      background: #1976d2;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Vote Games</h1>
-<p>منصة ربح حقيقية</p>
+  <div class="container">
+    <h1>🎮 Vote Games</h1>
 
-<input type="text" id="username" placeholder="اسم المستخدم">
-<br><br>
-<button onclick="login()">دخول</button>
-<br><br>
-<a href="rules.html">شروط وقوانين المنصة</a>
+    <div class="card">
+      <p>صوّت للألعاب واربح نقاط</p>
+      <a class="button" href="#">ابدأ التصويت</a>
+    </div>
 
-<script src="script.js"></script>
+    <div class="card">
+      <p>شاهد الترتيب اليومي</p>
+      <a class="button" href="#">عرض الترتيب</a>
+    </div>
+
+    <footer>
+      © 2026 Vote Games
+    </footer>
+  </div>
+
 </body>
 </html>
